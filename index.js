@@ -1,5 +1,5 @@
-
-
+// THIS IS THE BRAIN OF THE WebPAGE.
+// IT HANDLE ADDING, DELETING, AND SOME EXTRA FEATURES
 
 
 const T = document.querySelector(".textarea"); //this is connect text area
@@ -31,7 +31,7 @@ function tabclick() {
 
     //CREATED DELETE BUTTON
     const dltbutton = document.createElement("button");
-    dltbutton.classList.add("delete-btn");  // ✅ add class
+    dltbutton.classList.add("delete-btn");  
     dltbutton.innerHTML = '<i class="fa-solid fa-xmark fa-2x"></i>'
     dltbutton.classList.add("delete-btn")
     
@@ -46,7 +46,7 @@ function tabclick() {
     function deleteitem(e) {
         const item = e.target;
 
-        // 🔥 check if clicked element OR its parent is delete button
+        // check if clicked element OR its parent is delete button
         if (item.classList.contains("delete-btn") || item.parentElement.classList.contains("delete-btn")) {
 
             const btn = item.classList.contains("delete-btn") ? item : item.parentElement;
